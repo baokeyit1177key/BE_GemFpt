@@ -41,10 +41,10 @@ public class AuthenticationAPI {
         Account  account = authenticationService.register(responseRequest);
         return  ResponseEntity.ok(account);
     }
-    @GetMapping("send-mail")
+    @PostMapping("send-mail")
     public void sendMail(){
         EmailDetail emailDetail = new EmailDetail();
-        emailDetail.setRecipient("baoyasuohoang@gmail.com");
+        emailDetail.setRecipient("hoanvu3012@gmail.com");
         emailDetail.setSubject("test123");
         emailDetail.setMsgBody("aaa");
         emailService.sendMailTemplate(emailDetail);
