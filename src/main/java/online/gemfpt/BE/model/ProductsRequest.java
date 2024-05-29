@@ -12,6 +12,7 @@ public class ProductsRequest {
     double priceRate ;  // tỉ lệ áp giá
     int stock;
     String url; // ảnh
+    long barcode;
 
 
 }

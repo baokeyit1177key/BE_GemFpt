@@ -20,8 +20,15 @@ public class ProductServices {
         product.setPriceRate(productsRequest.getPriceRate());
         product.setStock(productsRequest.getStock());
         product.setUrl(productsRequest.getUrl());
-
-
+        product.setBarcode(productsRequest.getBarcode());
         return productsRepository.save(product);
     }
+    public void deleteID(Long id ) {
+        productsRepository.deleteById(id);
+    }
+    public void deleteByBarCode(Long barcode) {
+        productsRepository.deleteById(barcode);
+    }
+
+
 }

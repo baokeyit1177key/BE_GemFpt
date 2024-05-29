@@ -61,8 +61,4 @@ public class AuthenticationAPI {
         return ResponseEntity.ok(account);
     }
 
-
-
-
-
 }
